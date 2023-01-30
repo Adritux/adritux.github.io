@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6272a4">
+  <title>Portfolio terminal Adrián Díaz</title>
+  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+      <div class="header"> BASH - Adrián Díaz Currículum</div>
+      <div class="terminal" id="terminalWindow" >
+        <section id="terminal">
+          <div class="command">Último inicio de sesión: <span class="error" id="date"></span></div>
+          <div class="title">Instrucciones</div>
+          ¡Hola! Bienvenidos a mi currículum interactivo, para ver la lista de comandos disponibles teclea <span class="command">help</span>
+        </section>
+        <div class="prompt">
+          <span class="command">$</span> <span class="title">admin</span> <input id="promtInput"/>
+        </div>
+      </div>
+    </main>
+    <div class="hidden" id="promptClone">
+      <span class="command">$</span> <span class="title">admin</span> <span class="promtCloneInput"></span>
+      <div class="promtCloneContent"></div>
+    </div>
+    <div class="hidden" id="help">
+      <div class="sectionTitle">Puedes ingresar cualquiera de estos comandos: </div>
+      <div class="indent">
+        <div>
+          <span class="command">about</span>:
+          <div class="indent">Sobre mi</div> 
+        </div>
+        <div>
+          <span class="command">social</span>:
+          <div class="indent">Mis redes sociales</div> 
+        </div>
+        <div>
+          <span class="command">skills</span>:
+          <div class="indent">Mis conocimientos</div> 
+        </div>
+        <div>
+          <span class="command">education</span>:
+          <div class="indent">Todo sobre mi formación</div> 
+        </div>
+        <div>
+          <span class="command">experience</span>:
+          <div class="indent">Experiencia laboral y voluntariados</div> 
+        </div>
+        <div>
+          <span class="command">projects</span>:
+          <div class="indent">Aquí puedes descubrir mis otros proyectos</div> 
+        </div>
+        <div>
+          <span class="command">clear</span>:
+          <div class="indent">Borra el historial de la terminal</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="projects">
+      <div class="sectionTitle">Proyectos: </div>
+      <div class="indent">
+        <span class="title">
+          <pre>  
+              _ __  
+             | '_ \ 
+             | |_) |
+             | .__/ 
+             |_| 
+            
+              _ __ 
+             | '__|
+             | |   
+             |_|   
+
+              ___  
+             / _ \ 
+            | (_) |
+             \___/
+            
+            __  __
+            \ \/ /
+             >  < 
+            /_/\_\   
+            
+             _ 
+            (_)
+            | |
+            | |
+            |_|
+
+             _ __ ___  
+            | '_ ` _ \ 
+            | | | | | |
+            |_| |_| |_|
+
+             __ _ 
+            / _` |
+           | (_| |
+            \__,_|
+                   
+             _ __ ___  
+            | '_ ` _ \ 
+            | | | | | |
+            |_| |_| |_|
+
+             ___ 
+            / _ \
+           |  __/
+            \___|
+
+             _ __  
+            | '_ \ 
+            | | | |
+            |_| |_|
+
+             _   
+            | |_ 
+            | __|
+            | |_ 
+             \__|
+        
+              ___ 
+             / _ \
+            |  __/
+             \___|
+
+          </pre>
+
+        </span>
+      </div>
+      
+    </div>
+
+    <div class="hidden" id="skills">
+      <div class="sectionTitle">Conocimientos: </div>
+      <div class="indent">
+        <div>
+          <span class="command">Informática forense</span>:
+          <div class="indent">
+            <span class="title">FTKimager</span>
+            <span class="title">Photorec</span>
+            <span class="title">Autopsy</span>
+            <span class="title">Quickhash</span>
+            <span class="title">Caine</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Diseño web</span>:
+          <div class="indent">
+            <span class="title">HTML</span>
+            <span class="title">XML</span>
+            <span class="title">CSS</span>
+            <span class="title">JavaScript</span>
+            <span class="title">Json</span>
+            <span class="title">Bootstrap</span>
+            <span class="title">Nicepage</span>
+            <span class="title">PHP</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Bases de datos</span>:
+          <div class="indent">
+            <span class="title">MySQL</span>
+            <span class="title">Xampp</span>
+            <span class="title">Oracle</span>
+            <span class="title">MongoDB</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Administración y diseño de redes</span>:
+          <div class="indent">
+            <span class="title">CiscoNetworks</span>
+            <span class="title">Putty</span>
+            <span class="title">LinuxConfig</span>
+          </div> 
+        </div>
+
+        <div>
+          <span class="command">Sistemas operativos</span>:
+          <div class="indent">
+            <span class="title">WindowsCliente</span>
+            <span class="title">WindowsServer</span>
+            <span class="title">Linux</span>
+            <span class="title">LinuxServer</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Monitorización de redes</span>:
+          <div class="indent">
+            <span class="title">Nessus</span>
+            <span class="title">Nmap</span>
+            <span class="title">Wireshark</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Técnicas OSINT</span>:
+          <div class="indent">
+            <span class="title">Whois</span>
+            <span class="title">OSINTFramework</span>
+            <span class="title">Shodan</span>
+            <span class="title">Whatweb</span>
+            <span class="title">Dnsenum</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Análisis de vulnerabilidades</span>:
+          <div class="indent">
+            <span class="title">KaliLinux</span>
+            <span class="title">Metasploit</span>
+            <span class="title">Parrot</span>
+            <span class="title">Hydra</span>
+            <span class="title">JohnTheRipper</span>
+            <span class="title">SqlMap</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Idiomas</span>:
+          <div class="indent">
+            <span class="title">Español</span>
+            <span class="title">Inglés</span>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="about">
+      <div class="sectionTitle">Sobre mi: </div>
+        <br class="indent">
+          Hola. Soy <span class="command">Adrián Díaz</span>
+          un apasionado de la informática tanto por vocación como por diversión, por eso estoy estudiando Administración de sistemas informáticos en red y ciberseguridad <span class="command">(ASIR)</span>, dentro de este mundo tan amplio me gustaría formarme más tanto en el sector cloud computing como en la ciberseguridad, concretamente a la informática forense aunque no me cierro a descubrir sectores nuevos.</br></br>
+
+          En mi tiempo libre me gusta investigar tanto en el ámbito de la tecnología como en muchos otros e inventar y restaurar todo tipo de objetos.
+          Considero fundamental el  poder ayudar a los demás por eso hago multitud de voluntariados relaccionados con todos los sectores de la sociedad.
+        </div> 
+    </div>
+
+    <div class="hidden" id="experience">
+      <div class="sectionTitle">Experiencia laboral: </div>
+      <div class="indent">
+        <span class="title">Venta de lotería Sorteo del oro - Cruz Roja</span></br> <span class="command">Julio 2022 - Agosto 2022</span>
+        <div class="indent">
+          
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Agente comercial - Feria de pastelería</span></br> <span class="command">Noviembre 2019</span>
+        <div class="indent">
+         
+        </div> 
+      </div>
+      <div class="sectionTitle">Voluntariados: </div>
+      <div class="indent">
+        <span class="title">Profesor de informática en proyecto Balia conecta mayores - Balia</span></br> <span class="command">Febrero 2019 - Noviembre 2019</span>
+        <div class="indent">
+          Di clases de informática en dispositivos móviles en el proyecto Balia conecta mayores.
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Cofundador - Grupo de ayuda al refugiado Colegio Lourdes</span></br> <span class="command">Enero 2012 - Noviembre 2019</span>
+        <div class="indent">
+          Recaudación de fondos, diversas actividades sociales, trabajo con refugiados en Madrid, carga de camiones de ayuda humanitaria y colaboraciones con la AAPS.
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Staff - Deporte</span></br> <span class="command">Septiembre 2021 - Septiembre 2022</span>
+        <div class="indent">
+          Staff en carreras y jornadas deportivas solidarias para la recaudación e inclusión en diversas causas.
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Descarga de juguetes para la campaña de navidad - Caritas</span></br> <span class="command">Enero 2012 - Noviembre 2019</span>
+        <div class="indent">
+          Descarga y organización de cajas de juguetes para la campaña solidaria de reparto de juguetes en Navidad.
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Acompañamiento de personas mayores - Residencias</span></br> <span class="command">Enero 2018 - Enero 2019</span>
+        <div class="indent">
+          Acompañamiento y entretenimiento de personas mayores en residencias
+        </div> 
+      </div>
+    </div>
+
+    <div class="hidden" id="social">
+      <div class="sectionTitle">Redes sociales: </div>
+      <div class="indent">
+        <span class="title">Github</span> - <a class="command" target="_blank" href="https://github.com/Adritux">https://github.com/Adritux</a>
+      </div>
+      <div class="indent">
+        <span class="title">LinkedIn</span> - <a class="command" target="_blank" href="https://www.linkedin.com/in/adrian-diaz1">https://www.linkedin.com/in/adrian-diaz1</a>
+      </div>
+      <div class="indent">
+        <span class="title">Web</span> - <a class="command" target="_blank" href="https://adritux.github.io/">https://adritux.github.io/</a>
+      </div>
+    </div>
+
+    <div class="education hidden" id="education">
+      <div class="sectionTitle">Formación: </div>
+      <div class="indent">
+        <span class="title">Técnico superior en administración de sistemas informáticos en red y ciberseguridad - DigiTech</span><br> <span class="command">Agosto 2021 - Julio 2023</span>
+        <div class="indent">
+          
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Bachillerato Ciencias técnicas - Instituto Lourdes</span> <span class="command">Agosto 2019 - Mayo 2021</span>
+        <div class="indent">
+          Matrícula de honor en tecnologías de la información y la comunicación.
+        </div> 
+      </div>
+
+      <div class="sectionTitle">Certificaciones: </div>
+      <div class="indent">
+        <span class="title">CCNA: Networks essentials</span> - <span class="command">Cisco Networking Academy</span>
+        <div class="indent">
+          
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Cloud Computing</span> - <span class="command">Escuela de organización industrial</span>
+        <div class="indent">
+
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Protege tu negocio: Ciberseguridad en el trabajo</span> - <span class="command">Google Actívate</span>
+        <div class="indent">
+          
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Prevención de riesgos en puestos de azafatas y promotores de tierra</span> - <span class="command">Quirón prevención</span>
+        <div class="indent">
+          
+        </div> 
+      </div>
+    </div>
+</body>
+</html>
